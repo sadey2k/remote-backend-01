@@ -17,13 +17,7 @@ steps:
     allowTelemetryCollection: true
 
 - task: TerraformCLI@0
-  displayName: Terraform plan
+  displayName: Terraform init
   inputs:
-    command: 'plan'
-    allowTelemetryCollection: false
-
-- task: TerraformCLI@0
-  displayName: Terraform apply
-  inputs:
-    command: 'apply'
+    command: 'destroy'
     allowTelemetryCollection: false
